@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --marron :#ebe5d9;
+    --oscuro :#211f22;
+    --verde :#9fa077;}
+
+@font-face{ font-family: hola;
+        src: url(../typography/Myfont.ttf); }
+
+body{
+    display: grid;
+    place-items: center;
+    font-family: hola;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:var(--oscuro);
+}
+.countdown{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    flex-wrap: wrap;
+}
+.countdown div{
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    color: orange;
+    font-size: 40px;
+    padding: 30px 10px;
+}
+h1:hover{color: var(--verde);}
+p{
+    display: grid;
+    place-items: center;
+    border: solid 1px #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--verde);
+}
+A{width: 46%;
+  display: flex;}
+span{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: var(--verde);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.final-sms{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(-100%);
+    transition: ease-in-out 0.5s;
+    background-color: #333;
+}
+.final-sms h2{
+    text-align: center;
+    font-size: 100px;
+    color: #fff;
+}
